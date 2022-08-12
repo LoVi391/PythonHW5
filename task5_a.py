@@ -7,14 +7,21 @@ while k != 0:
     k -= a
     if k < 1:
         print('выиграл 1 игрок')
-        break
+        
+
     b = random.randint(1, 28)
     print(f"робот сходил: {b}")
     k -= b
     if k < 1:
         print('выиграл робот')
-        break
+       
+
+flag = True
+i = 0
+while flag:
+    if i == 1000:
+        flag = False 
+    i +=1
+print('END!')
 
 
-
-    
